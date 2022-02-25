@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(img/bg.jpg) no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+form {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 5px #1fc9cc;
+  display: grid;
+  grid-template-areas:
+    "title title "
+    "text text "
+    "label-name input-name"
+    "label-email input-email"
+    "label-phone input-phone"
+    "label-subject select"
+    "label-message textarea"
+    "line line"
+    "none button";
+  grid-gap: 10px;
+}
+
+.title {
+  grid-area: title;
+}
+
+.title-text {
+  grid-area: text;
+}
+
+.label-name {
+  grid-area: label-name;
+}
+
+.input-name {
+  grid-area: input-name;
+  display: flex;
+  justify-content: space-between;
+}
+
+#name,
+#lname {
+  width: 45%;
+}
+
+.label-email {
+  grid-area: label-email;
+}
+
+#email {
+  grid-area: input-email;
+}
+
+.label-phone {
+  grid-area: label-phone;
+}
+
+.input-phone {
+  grid-area: input-phone;
+  display: flex;
+  justify-content: space-between;
+}
+
+#phone1,
+#phone2,
+#phone3 {
+  width: 30%;
+}
+
+.label-subject {
+  grid-area: label-subject;
+}
+
+select#subject {
+  grid-area: select;
+}
+
+.label-message {
+  grid-area: label-message;
+}
+
+#message {
+  grid-area: textarea;
+}
+
+.line {
+  grid-area: line;
+  height: 1px;
+  background-color: #fff;
+}
+
+.btn {
+  grid-area: button;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px;
+}

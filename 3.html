@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="3.css">
+    <title>3</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Flights-Search List</h1>
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="##">Flights Search List</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="radio-button">
+                <div class="radio_oneway">
+                    <input type="radio" value="one-way"
+                    id="one-way" name="way">
+                    <label for="way">One way</label>
+                </div>
+                <div class="radio_roundtrip">
+                    <input type="radio" value="round-trip" id="round-trip" name="way">
+                    <label for="round-trip">Round Trip</label>
+                </div>
+            </div>
+            
+            <div class="search-inputs">
+                <input class="input_location" type="text" placeholder="From" id="from">
+                <input class="input_location" type="text" placeholder="To" id="to">
+                <input class="input_calendar" type="text" placeholder="Depart Date" id="depart">
+                <input class="input_calendar" type="text" placeholder="Return Date" id="return">
+                <select name="class" id="class">
+                    <option value="econom">Econom Class</option>
+                    <option value="standart">Standart Class</option>
+                    <option value="business">Business Class</option>
+                </select>
+                <input type="submit" value="Search">
+            </div>
+
+            <main>
+                <aside>
+                    <h3>Filter</h3>
+                    <p class="blue">No. of Stops</p>
+                    <div>
+                        <input type="checkbox" id="nonstop" name="nonstop">
+                        <label for="nonstop">Non stop</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="1stop" name="1stop">
+                        <label for="nonstop">1 stop</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="2+stop" name="2+stop">
+                        <label for="nonstop">2+ stops</label>
+                    </div>
+
+                    <p class="blue">Price</p>
+                    <div class="aside_price">
+                        <div>
+                            <p>Min:</p>
+                            <input type="number" min="0" max="10000" placeholder="0" id="min-cost">
+                            <label for="min-cost">$</label>
+                        </div>
+                        <div class="space">
+                            <p>-</p>
+                        </div>
+                        <div>
+                            <p>Min:</p>
+                            <input type="number" min="0" max="10000" placeholder="1000" id="max-cost">
+                            <label for="max-cost">$</label>
+                        </div>
+                    </div>
+                    <p class="blue">Airlines</p>
+                    <div>
+                        <input type="checkbox" id="aisiana_airlines" name="aisiana_airlines">
+                        <label for="aisiana_airlines">Aisiana_Airlines</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="american_airlines" name="american_airlines">
+                        <label for="american_airlines">American Airlines</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="air_canada" name="air_canada">
+                        <label for="air_canada">Air Canada</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="air_india" name="air_india">
+                        <label for="air_india">Air India</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="jet_airways" name="jet_airways">
+                        <label for="jet_airways">Jet Airways</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="spicejet" name="spicejet">
+                        <label for="spicejet">Spicejet</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="indigo" name="indigo">
+                        <label for="indigo">IndiGo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="multiple_airlines" name="multiple_airlines">
+                        <label for="multiple_airlines">Multiple Airlines</label>
+                    </div>
+                </aside>
+
+                <div class="main">
+
+                    <h2>Dehli to Sydney</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Airlines</th>
+                                <th>Departures</th>
+                                <th>Duration</th>
+                                <th>Arrival</th>
+                                <th>Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>IndiGo</div>
+                                    <div>6E-2489</div>
+                                </td>
+                                <td>
+                                    <div>23:30</div>
+                                    <div>Dehli</div>
+                                </td>
+                                <td>
+                                    <div>18h 55m</div>
+                                    <div>Non stop</div>
+                                </td>
+                                <td>
+                                    <div>18:15</div>
+                                    <div>Sydney</div>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <div class="btn_book"><a href="#">Book</a></div>
+                                    <div class="btn_details"><a href="#"> Flight Details</a></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div>IndiGo</div>
+                                    <div>6E-2489</div>
+                                </td>
+                                <td>
+                                    <div>23:30</div>
+                                    <div>Dehli</div>
+                                </td>
+                                <td>
+                                    <div>18h 55m</div>
+                                    <div>Non stop</div>
+                                </td>
+                                <td>
+                                    <div>18:15</div>
+                                    <div>Sydney</div>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <div class="btn_book"><a href="#">Book</a></div>
+                                    <div class="btn_details"><a href="#"> Flight Details</a></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div>IndiGo</div>
+                                    <div>6E-2489</div>
+                                </td>
+                                <td>
+                                    <div>23:30</div>
+                                    <div>Dehli</div>
+                                </td>
+                                <td>
+                                    <div>18h 55m</div>
+                                    <div>Non stop</div>
+                                </td>
+                                <td>
+                                    <div>18:15</div>
+                                    <div>Sydney</div>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <div class="btn_book"><a href="#">Book</a></div>
+                                    <div class="btn_details"><a href="#"> Flight Details</a></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div>IndiGo</div>
+                                    <div>6E-2489</div>
+                                </td>
+                                <td>
+                                    <div>23:30</div>
+                                    <div>Dehli</div>
+                                </td>
+                                <td>
+                                    <div>18h 55m</div>
+                                    <div>Non stop</div>
+                                </td>
+                                <td>
+                                    <div>18:15</div>
+                                    <div>Sydney</div>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <div class="btn_book"><a href="#">Book</a></div>
+                                    <div class="btn_details"><a href="#"> Flight Details</a></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div>IndiGo</div>
+                                    <div>6E-2489</div>
+                                </td>
+                                <td>
+                                    <div>23:30</div>
+                                    <div>Dehli</div>
+                                </td>
+                                <td>
+                                    <div>18h 55m</div>
+                                    <div>Non stop</div>
+                                </td>
+                                <td>
+                                    <div>18:15</div>
+                                    <div>Sydney</div>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <div class="btn_book"><a href="#">Book</a></div>
+                                    <div class="btn_details"><a href="#"> Flight Details</a></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div>IndiGo</div>
+                                    <div>6E-2489</div>
+                                </td>
+                                <td>
+                                    <div>23:30</div>
+                                    <div>Dehli</div>
+                                </td>
+                                <td>
+                                    <div>18h 55m</div>
+                                    <div>Non stop</div>
+                                </td>
+                                <td>
+                                    <div>18:15</div>
+                                    <div>Sydney</div>
+                                </td>
+                                <td>$980</td>
+                                <td>
+                                    <div class="btn_book"><a href="#">Book</a></div>
+                                    <div class="btn_details"><a href="#"> Flight Details</a></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+            
+            
+        </div>
+    </main>
+    
+</body>
+</html>

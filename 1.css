@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: orangered;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 400px;
+  min-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+p {
+  color: white;
+}
+
+.form {
+  padding: 20px;
+  margin-top: 200px;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 20px 3px rgb(71, 71, 71);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+input {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  border: 0;
+}
+
+.login {
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border-bottom: 5px solid darkgreen;
+}
+
+h1 {
+  padding-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+li {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.forgot {
+  color: orangered;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials a {
+  text-decoration: none;
+  color: white;
+  box-shadow: 5px 5px 20px 3px rgb(71, 71, 71);
+}
+
+.fb,
+.tw {
+  padding: 10px 30px;
+  width: 45%;
+}
+
+.fb {
+  background-color: blue;
+}
+
+.tw {
+  background-color: lightskyblue;
+}
+
+.socials img {
+  height: 14px;
+}

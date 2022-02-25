@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2.css">
+    <title>2</title>
+</head>
+<body>
+        
+    <form>
+        <h1 class="title">Contact form</h1>
+        <p class="title-text">Please fill in your information and we`ll be sending your order</p>
+            
+        <label class="label-name" for="name">Your name</label>
+        <div class="input-name">
+            <input placeholder="first name" type="text" id="name" name="name" />
+            <input placeholder="last name" type="text" id="lname" name="lname" />
+        </div>
+            
+        <label class="label-email" for="email">Your email</label>
+        <input placeholder="your_mail@gmail.com" type="email" id="email" name="email" />
+            
+        <label class="label-phone" for="phone">Phone*</label>
+        <div class="input-phone">
+            <input placeholder="000" type="tel" id="phone1" name="phone1" />
+            <input placeholder="000" type="tel" id="phone2" name="phone2" />
+            <input placeholder="0000" type="tel" id="phone3" name="phone3" />
+        </div>
+            
+        <label class="label-subject" for="subject">Message subject*</label>
+        <select id="subject" name="subject">
+            <option>Other</option>
+            <option>Othe2</option>
+            <option>Othe3</option>
+        </select>
+            
+        <label class="label-message" for="message">Message*</label>
+            <textarea rows="5" id="message" name="message"></textarea>
+            
+        <div class="line"></div>
+
+        <button class="btn" type="submit">SUBMIT FORM</button>
+
+    </form>
+        
+    
+</body>
+</html>

@@ -1,0 +1,183 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1240px;
+  margin: auto;
+}
+
+header {
+  padding: 20px;
+  background-color: blue;
+}
+
+header .container {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav a::after {
+  content: "/";
+}
+
+.nav a:last-child:after {
+  content: "";
+}
+
+.blue {
+  color: blue;
+  font-weight: bold;
+  padding: 20px 0 5px;
+}
+
+.radio-button {
+  display: flex;
+  padding: 10px 0;
+}
+
+.radio_oneway,
+.radio_roundtrip {
+  padding-right: 20px;
+}
+
+.search-inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.search-inputs input,
+select {
+  width: 15%;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: blue;
+  padding: 10px 5px;
+}
+
+main {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+aside,
+.main {
+  background-color: #fff;
+}
+
+aside {
+  width: 20%;
+  margin-right: 10px;
+  padding: 20px;
+}
+
+aside h3 {
+  margin: 0 0 20px 0;
+}
+
+.aside_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.aside_price div input {
+  width: 80%;
+}
+
+.space {
+  padding: 5px 15px;
+}
+
+.main {
+  width: 80%;
+  text-align: center;
+}
+
+.main table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: aliceblue;
+}
+
+th {
+  color: blue;
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+td div {
+  padding: 5px;
+}
+
+td div:last-child {
+  color: rgb(156, 156, 156);
+}
+
+.btn_book a {
+  box-sizing: border-box;
+  color: white;
+  background-color: blue;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.btn_details {
+  margin-top: 15px;
+}
+
+tr {
+  border-bottom: 2px solid gray;
+}
+
+aside,
+main {
+  border-radius: 5px;
+}
+
+#from,
+#to {
+  background: url(img/location.svg) no-repeat center right 5px;
+  background-color: #fff;
+}
+
+#depart,
+#return {
+  background: url(img/calendar.svg) no-repeat center right 5px;
+  background-color: #fff;
+}
